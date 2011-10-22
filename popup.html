@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <script>
+      function newDoc(type) {
+        if (type == 'document') {
+          url = 'http://docs.google.com/?action=newdoc';
+        }
+        else if (type == 'spreadsheet') {
+          url = 'http://spreadsheets.google.com/ccc?new';
+        }
+        else if (type == 'presentation') {
+          url = 'http://docs.google.com/?action=new_presentation';
+        }
+        else if (type == 'drawing') {
+          url = 'https://docs.google.com/drawings/create';
+        }
+
+        chrome.tabs.create(
+        {'url': url},
+        function(tab) {
+          // Tab opened.
+        });
+      }
+
+      function loadURL(url) {
+        chrome.tabs.create(
+        {'url': url},
+        function(tab) {
+          // Tab opened.
+        });
+      }
+    </script>
+
+    <style type="text/css" media="all">
+      #links {
+        list-style:none;
+        padding: 0px;
+        margin: 0px;
+      }
+      li.link {
+        color: #fff;
+        border: 1px solid black;
+        margin-top: 2px;
+        padding: 2px;
+        border-radius: 3px;
+      }
+      li.link:hover {
+        cursor: hand;
+        color: black; 
+      }
+      #document {
+        background-color: #214471;
+      }
+      #spreadsheet {
+        background-color: #627830;
+      }
+      #presentation {
+        background-color: #984305;
+      }
+      #drawing {
+        background-color: #947236;
+      }
+      #all_item {
+        padding: 0px;
+        margin: 0px;
+        font-size: 12px;
+        color: blue;
+      }
+      #all_item:hover {
+        cursor: hand;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="links">
+      <li id="document" class="link" onClick="newDoc('document')">Document</li>
+      <li id="spreadsheet" class="link" onClick="newDoc('spreadsheet')">Spreadsheet</li>
+      <li id="presentation" class="link" onClick="newDoc('presentation')">Presentation</li>
+      <li id="drawing" class="link" onClick="newDoc('drawing')">Drawing</li>
+    </ul>
+    <span id="all_item" onClick="loadURL('https://docs.google.com/#all')">All items</span>
+  </body>
+</html>
