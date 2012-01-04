@@ -1,0 +1,38 @@
+#links {
+    list-style:none;
+    padding: 0px;
+    margin: 0px;
+}
+li.link {
+    color: #fff;
+    border: 1px solid black;
+    margin-top: 2px;
+    padding: 2px;
+    border-radius: 3px;
+}
+li.link:hover {
+    cursor: hand;
+    color: black; 
+}
+#document {
+    background-color: #214471;
+}
+#spreadsheet {
+    background-color: #627830;
+}
+#presentation {
+    background-color: #984305;
+}
+#drawing {
+    background-color: #947236;
+}
+#all_item {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    color: blue;
+}
+#all_item:hover {
+    cursor: hand;
+    color: green;
+}
