@@ -11,6 +11,7 @@ Avaliable types:
  * Spreadsheet
  * Presentation
  * Drawing
+ * Table
 
 Install
 ---

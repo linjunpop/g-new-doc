@@ -11,6 +11,9 @@ function newDoc(type) {
     else if (type == 'drawing') {
         url = 'https://docs.google.com/drawings/create';
     }
+    else if (type == 'table') {
+        url = 'https://www.google.com/fusiontables/DataSource?dsrcid=implicit';
+    }
 
    loadURL(url);
  }
