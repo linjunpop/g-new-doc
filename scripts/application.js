@@ -1,18 +1,23 @@
 function newDoc(type) {
-  if (type == 'document') {
+  switch(type) {
+  case 'document':
     url = 'https://docs.google.com/document/d/new';
-  }
-  else if (type == 'spreadsheet') {
-    url = 'http://spreadsheets.google.com/ccc?new';
-  }
-  else if (type == 'presentation') {
+    break;
+  case 'presentation':
     url = 'https://docs.google.com/presentation/create';
-  }
-  else if (type == 'drawing') {
+    break;
+  case 'spreadsheet':
+    url = 'http://spreadsheets.google.com/ccc?new';
+    break;
+  case 'form':
+    url = 'https://docs.google.com/spreadsheet/newform';
+    break;
+  case 'drawing':
     url = 'https://docs.google.com/drawings/create';
-  }
-  else if (type == 'table') {
+    break;
+  case 'table':
     url = 'https://www.google.com/fusiontables/DataSource?dsrcid=implicit';
+    break;
   }
 
   loadURL(url);

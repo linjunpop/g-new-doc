@@ -8,8 +8,9 @@ A google chrome extension to create new Google Doc with only two clicks.
 Avaliable types:
 
 * Document
-* Spreadsheet
 * Presentation
+* Spreadsheet
+* Form
 * Drawing
 * Table
 
