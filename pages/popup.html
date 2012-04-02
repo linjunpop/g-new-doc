@@ -1,17 +1,18 @@
 <html>
   <head>
     <link rel="stylesheet" href="/stylesheets/application.css" >
+    <script type="text/javascript" src="/scripts/zepto.min.js"></script>
     <script type="text/javascript" src="/scripts/application.js"></script>
   </head>
   <body>
     <ul id="links">
-      <li id="document" class="link" onClick="newDoc('document')">Document</li>
-      <li id="presentation" class="link" onClick="newDoc('presentation')">Presentation</li>
-      <li id="spreadsheet" class="link" onClick="newDoc('spreadsheet')">Spreadsheet</li>
-      <li id="form" class="link" onClick="newDoc('form')">Form</li>
-      <li id="drawing" class="link" onClick="newDoc('drawing')">Drawing</li>
-      <li id="table" class="link" onClick="newDoc('table')">Table</li>
-      <li id="all_items" class="link" onClick="loadURL('https://docs.google.com/#all')">All Items</li>
+      <li class="link" data-target='https://docs.google.com/document/d/new'>Document</li>
+      <li class="link" data-target='https://docs.google.com/presentation/create'>Presentation</li>
+      <li class="link" data-target='http://spreadsheets.google.com/ccc?new'>Spreadsheet</li>
+      <li class="link" data-target='https://docs.google.com/spreadsheet/newform'>Form</li>
+      <li class="link" data-target='https://docs.google.com/drawings/create'>Drawing</li>
+      <li class="link" data-target='https://www.google.com/fusiontables/DataSource?dsrcid=implicit'>Table</li>
+      <li class="link" data-target='https://docs.google.com/#all'>All Items</li>
     </ul>
   </body>
 </html>
