@@ -7,11 +7,11 @@ A google chrome extension to create new Google Doc with only two clicks.
 
 Avaliable types:
 
- * Document
- * Spreadsheet
- * Presentation
- * Drawing
- * Table
+* Document
+* Spreadsheet
+* Presentation (Temperary disabled on version 1.0.7)
+* Drawing
+* Table
 
 Install
 ---
