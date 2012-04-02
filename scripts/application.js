@@ -6,8 +6,7 @@ function newDoc(type) {
     url = 'http://spreadsheets.google.com/ccc?new';
   }
   else if (type == 'presentation') {
-    // FIXME
-    //url = 'http://docs.google.com/?action=new_presentation';
+    url = 'https://docs.google.com/presentation/create';
   }
   else if (type == 'drawing') {
     url = 'https://docs.google.com/drawings/create';

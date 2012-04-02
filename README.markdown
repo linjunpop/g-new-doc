@@ -9,7 +9,7 @@ Avaliable types:
 
 * Document
 * Spreadsheet
-* Presentation (Temperary disabled on version 1.0.7)
+* Presentation
 * Drawing
 * Table
 
