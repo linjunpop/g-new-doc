@@ -1,11 +1,9 @@
 G New Doc
 ===
 
-Description
----
 A google chrome extension to create new Google Doc with only two clicks.
 
-Avaliable types:
+Avaliable document types:
 
 * Document
 * Presentation
