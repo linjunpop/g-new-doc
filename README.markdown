@@ -1,6 +1,8 @@
 G New Doc
 ===
 
+[![endorse](http://api.coderwall.com/linjunpop/endorsecount.png)](http://coderwall.com/linjunpop)
+
 A google chrome extension to create new Google Doc with only two clicks.
 
 Avaliable document types:
